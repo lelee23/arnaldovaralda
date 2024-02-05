@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+body .header {
+  padding: 5px 15px;
+  border-bottom: black solid 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  overflow: hidden;
+  z-index: 99;
+  background-color: #fff;
+  top: 0;
+}
+body .header .img {
+  width: 16%;
+}
+body .header .content {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+body .header .content .p {
+  font-size: 13pt;
+  font-weight: 300;
+}
+@media (min-width: 1400px) {
+  body .header .content .p {
+    font-size: 18pt;
+    font-weight: 300;
+  }
+}
+@media (max-width: 322px) {
+  body .header .content .p {
+    font-size: 10pt;
+    font-weight: 300;
+  }
+}
+@media (max-width: 600px) {
+  body .header {
+    display: flex;
+    flex-direction: column;
+  }
+  body .header .img {
+    width: 30%;
+  }
+  body .header .content {
+    display: flex;
+    align-items: center;
+  }
+}
+body .section1 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 15px 0;
+  overflow: hidden;
+  flex-wrap: wrap;
+  min-height: 60vh;
+}
+body .section1 .content {
+  width: 48%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+}
+body .section1 .content h1 {
+  font-size: 22pt;
+  font-weight: 400;
+}
+body .section1 .content h1 span {
+  font-weight: 600;
+}
+body .section1 .content h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 15pt;
+  font-weight: 300;
+}
+body .section1 img {
+  border-radius: 15px;
+  width: 40%;
+}
+@media (max-width: 768px) {
+  body .section1:not(:only-child) .content {
+    width: 80%;
+    margin-bottom: 15px;
+  }
+  body .section1:not(:only-child) img {
+    width: 80%;
+  }
+}
+body .section2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px 0;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+body .section2 .box1, body .section2 .box2, body .section2 .box3 {
+  border: none;
+  width: 400px;
+  height: auto;
+  background-color: #5c9bff;
+  padding: 5px;
+  margin: 5px;
+  min-height: 265px;
+}
+body .section2 .box1 h1, body .section2 .box2 h1, body .section2 .box3 h1 {
+  font-weight: bold;
+  font-size: clamp(1rem, 1rem + (1vw - 0.2rem) * 0.455, 1.25rem);
+  margin-bottom: 10px;
+}
+body .section2 .box1 p, body .section2 .box2 p, body .section2 .box3 p {
+  font-weight: 300;
+  font-style: normal;
+  font-size: clamp(1rem, 1rem + (1vw - 0.2rem) * 0.455, 1.25rem);
+}
+body .section3 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 15px 0;
+  overflow: hidden;
+  flex-wrap: wrap;
+  min-height: 60vh;
+}
+body .section3 img {
+  width: 48%;
+  border-radius: 15px;
+}
+body .section3 .content {
+  width: 48%;
+}
+body .section3 .content h1 {
+  font-size: 30pt;
+  font-weight: 400;
+}
+body .section3 .content p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 12pt;
+  font-weight: 300;
+}
+@media (max-width: 1000px) {
+  body .section3:not(:only-child) .content {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+  body .section3:not(:only-child) img {
+    width: 90%;
+  }
+}
+@media (min-width: 600px) and (max-width: 1000px) {
+  body .section3:not(:only-child) img {
+    width: 70%;
+  }
+}
+@media (min-width: 1400px) {
+  body .section3:not(:only-child) img {
+    width: 40%;
+  }
+}
+@media (min-width: 1600px) {
+  body .section3:not(:only-child) .content h1 {
+    font-size: 40pt;
+  }
+  body .section3:not(:only-child) .content p {
+    font-size: 17pt;
+  }
+  body .section3:not(:only-child) .content a button {
+    font-size: 20pt !important;
+  }
+}
+@media (min-width: 2000px) {
+  body .section3:not(:only-child) img {
+    width: 30%;
+  }
+}
+body .section4 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 15px 0;
+  overflow: hidden;
+  min-height: 60vh;
+  width: 99vw;
+}
+body .section4 h1 {
+  font-size: 30pt;
+  font-weight: 400;
+}
+body .section4 p.txt-drop {
+  text-align: start;
+}
+body .section4 .card-body {
+  width: 98%;
+}
+body .section4 .collapse:not(.show) {
+  display: none;
+}
+body .section4 button:focus:not(:focus-visible) {
+  outline: 0;
+}
+body .section4 .accordion-flush .accordion-button {
+  padding: 15px 0;
+  background: none;
+  border: 0;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+body .section4 .accordion-button:focus {
+  outline: 0;
+  box-shadow: none;
+}
+body .section4 .accordion-button:hover {
+  z-index: 2;
+}
+body .section4 [type=button]:not(:disabled),
+body .section4 [type=reset]:not(:disabled),
+body .section4 [type=submit]:not(:disabled),
+body .section4 button:not(:disabled) {
+  cursor: pointer;
+}
+body .section4 .accordion-body p {
+  font-family: "Poppins", sans-serif;
+  padding: 0 10px;
+}
+body .section4 .accordion-body ul li {
+  font-family: "Poppins", sans-serif;
+}
+body .section4 .accordion-body ul {
+  padding: 0px 27px;
+}
+body .section4 .accordion-flush .accordion-button:not(.collapsed) {
+  box-shadow: none;
+  color: #ffffff;
+  transition: 0.5s ease-in-out;
+}
+body .section4 .accordion-flush {
+  transition: 2s ease-in-out;
+}
+body .section4 h2.accordion-header {
+  background-color: #5c9bff;
+  border-radius: 15px;
+  padding: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+body .section4 button.accordion-button {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  transition: transform 0.2s ease-in-out;
+}
+body .section4 .fa-chevron-up:before {
+  margin-left: 20px;
+}
+body .section4 .fa-chevron-down:before {
+  margin-left: 20px;
+}
+body .section4 .accordion-item {
+  width: 100%;
+  margin: 5px 0;
+}
+body .section5 {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 15px 17px;
+  overflow: hidden;
+  min-height: 30vh;
+  width: 99vw;
+}
+body .section5 h1 {
+  font-size: 22pt;
+  font-weight: 400;
+}
+body .section6 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 15px 0;
+  overflow: hidden;
+  flex-wrap: wrap;
+  min-height: 60vh;
+  background-color: #5c9bff;
+}
+body .section6 iframe {
+  width: 48%;
+}
+body .section6 .content {
+  width: 48%;
+}
+body .section6 .content h1 {
+  font-size: 30pt;
+  font-weight: 400;
+}
+body .section6 .content p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 15pt;
+  font-weight: 300;
+}
+body .section6 .content p i {
+  color: rgba(255, 255, 255, 0.7803921569);
+  font-size: 17pt;
+}
+@media (max-width: 1000px) {
+  body .section6:not(:only-child) .content {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+  body .section6:not(:only-child) iframe {
+    width: 90%;
+  }
+}
+@media (min-width: 600px) and (max-width: 1000px) {
+  body .section6:not(:only-child) iframe {
+    width: 70%;
+  }
+  body .section6:not(:only-child) .content {
+    width: 70%;
+  }
+}
+@media (min-width: 1400px) {
+  body .section6:not(:only-child) iframe {
+    width: 40%;
+  }
+}
+@media (min-width: 1600px) {
+  body .section6:not(:only-child) .content h1 {
+    font-size: 40pt;
+  }
+  body .section6:not(:only-child) .content p {
+    font-size: 17pt;
+  }
+  body .section6:not(:only-child) .content a button {
+    font-size: 20pt !important;
+  }
+}
+@media (min-width: 2000px) {
+  body .section6:not(:only-child) iframe {
+    width: 30%;
+  }
+}
+body footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 15px 17px;
+  overflow: hidden;
+  min-height: 30vh;
+  width: 100vw;
+  background-color: #002b70;
+}
+body footer h3, body footer p, body footer a {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 17pt;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+}
+body footer h3 {
+  font-weight: bold;
+}
+body .section8 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 15px 0;
+  overflow: hidden;
+  flex-wrap: wrap;
+  min-height: 60vh;
+}
+body .section8 .content {
+  overflow-x: hidden;
+  width: 95%;
+}
+body .section8 .content h1 {
+  font-size: 22pt;
+  font-weight: 400;
+}
+body .section8 .content p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 12pt;
+  font-weight: 300;
+}
+body .section8 .content p span {
+  margin-top: 10px;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
